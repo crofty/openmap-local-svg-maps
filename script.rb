@@ -60,7 +60,7 @@ layers.each do |layer|
   SH
 
   run_command  <<-SH
-    geoproject 'd3.geoMercator().fitSize([#{width}, #{height}], d)' < #{json_filename} |
+    npx geoproject 'd3.geoMercator().fitSize([#{width}, #{height}], d)' < #{json_filename} |
       node_modules/.bin/ndjson-split 'd.features' > #{projected_json}
   SH
 
@@ -69,10 +69,10 @@ layers.each do |layer|
   SH
 
   run_command  <<-SH
-    geo2svg -n -w #{width} -h #{height} < #{projected_json} > #{svg_filename}
+    npx geo2svg -n -w #{width} -h #{height} < #{projected_json} > #{svg_filename}
   SH
 end
 
 run_command  <<-SH
-  geo2svg -n -w #{width} -h #{height} < #{composed_filename} > output/composed.svg
+  npx geo2svg -n -w #{width} -h #{height} < #{composed_filename} > output/composed.svg
 SH

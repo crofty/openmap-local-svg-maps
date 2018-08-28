@@ -1,0 +1,27 @@
+{
+  "name": "openmap-local-svg-maps",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/crofty/openmap-local-svg-maps.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/crofty/openmap-local-svg-maps/issues"
+  },
+  "homepage": "https://github.com/crofty/openmap-local-svg-maps#readme",
+  "dependencies": {
+    "@mapbox/geo-viewport": "^0.4.0",
+    "d3-geo-projection": "^2.4.1"
+  }
+}
