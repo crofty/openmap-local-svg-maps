@@ -6,4 +6,5 @@ It uses data from the [OS OpenMap Local](https://www.ordnancesurvey.co.uk/busine
 
 An example of the SVG output can be seen [here](https://github.com/crofty/openmap-local-svg-maps/blob/master/example/se-london.svg).
 
+    npm install
     ruby script.rb
